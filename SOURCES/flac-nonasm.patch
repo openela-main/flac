@@ -1,0 +1,12 @@
+diff -up flac-1.3.2/configure.ac.nonasm flac-1.3.2/configure.ac
+--- flac-1.3.2/configure.ac.nonasm	2018-09-20 18:07:24.511716480 +0200
++++ flac-1.3.2/configure.ac	2018-09-20 18:21:18.727824763 +0200
+@@ -377,7 +377,7 @@ if test x$have_clock_gettime = xyes; the
+ fi
+ 
+ # only matters for x86
+-AC_CHECK_PROGS(NASM, nasm)
++#AC_CHECK_PROGS(NASM, nasm)
+ AM_CONDITIONAL(FLaC__HAS_NASM, test -n "$NASM")
+ if test -n "$NASM" ; then
+ AC_DEFINE(FLAC__HAS_NASM)
